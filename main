@@ -1,0 +1,3 @@
+sudo sysadminctl -deleteUser testadmin
+sudo sysadminctl -addUser VSAadmin -fullName "VSA Admin" -password - -home /var/VSAadmin -admin
+sudo dscl . create /Users/VSAadmin IsHidden 1 && sudo mkdir -p /var/VSAadmin && sudo chown -R VSAadmin:staff /var/VSAadmin
